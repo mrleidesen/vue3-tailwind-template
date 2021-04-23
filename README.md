@@ -1,0 +1,14 @@
+# vue3-tailwind-template
+已经集成`vite2`+`vue3`+`tailwind css`，其余如需要根据vite文档来进行配置
+
+## 下载
+* 直接通过`Download ZIP`
+* 通过Git clone
+```
+git clone https://github.com/mrleidesen/vue3-tailwind-template.git
+```
+
+## 运行
+> npm run install  
+
+> npm run dev
