@@ -1,5 +1,5 @@
 # vue3-tailwind-template
-已经集成`Vite2`+`Vue3`+`VueRouter4`+`Tailwind CSS`，其余如需要根据vite文档来进行配置
+已经集成`Vite2`+`Vue3`+`VueRouter4`+`Windi CSS`，其余如需要根据vite文档来进行配置
 
 ## 下载
 * 直接通过`Download ZIP`

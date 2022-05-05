@@ -1,24 +1,42 @@
 <template>
   <h1 class="text-red-500 text-[20px]">Hello Home!</h1>
-  <p>{{ count }}</p>
-  <button @click="increment">increment</button>
+  <p>{{ JSON.stringify(searchForm) }}</p>
+  <button @click="handleChange">Change</button>
+  <button @click="handleReset">Reset</button>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from "vue";
+<script>
+import { defineComponent } from "vue";
+import cloneDeep from "lodash.clonedeep";
+
+const defaultForm = {
+  name: "",
+  age: 13,
+  children: {
+    name: "",
+    age: 13,
+    children: {
+      name: "",
+      age: 12,
+    },
+  },
+};
 
 export default defineComponent({
-  setup() {
-    const count = ref<number>(0);
+  data: () => ({
+    searchForm: Object.assign({}, defaultForm),
+  }),
 
-    const increment = () => {
-      count.value++;
-    };
+  methods: {
+    handleReset() {
+      this.searchForm = this.$options.data().searchForm;
+      console.log(this.$options.data().searchForm);
+    },
 
-    return {
-      count,
-      increment,
-    };
+    handleChange() {
+      this.searchForm.children.name = "Big";
+      this.searchForm.children.children.name = "Helo";
+    },
   },
 });
 </script>

@@ -8,6 +8,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
     "vue": "^3.2.29",
     "vue-router": "4"
   },
