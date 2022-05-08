@@ -1,4 +1,4 @@
-# vue3-tailwind-template
+# vue3-windi-template
 
 已经集成`Vite2`+`Vue3`+`VueRouter4`+`Windi CSS`，其余如需要根据 vite 文档来进行配置
 
