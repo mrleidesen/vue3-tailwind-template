@@ -1,21 +1,22 @@
-import { assert, expect, test } from "vitest";
+import { expect, test } from "vitest";
+// import { render, screen } from "@testing-library/vue";
+import HomePage from "./HomePage.vue";
+import { mount } from "@vue/test-utils";
 
-// Edit an assertion and save to see HMR in action
+// If you want using @testing-library
+// test("displays message", async () => {
+//   render(HomePage);
 
-test("Math.sqrt()", () => {
-  expect(Math.sqrt(4)).toBe(2);
-  expect(Math.sqrt(144)).toBe(12);
-  expect(Math.sqrt(2)).toBe(Math.SQRT2);
-});
+//   // Assert the rendered text of the component
+//   const view = await screen.findByText("0");
 
-test("JSON", () => {
-  const input = {
-    foo: "hello",
-    bar: "world",
-  };
+//   expect(view.className).toBe("count");
+// });
 
-  const output = JSON.stringify(input);
+test("should show text", () => {
+  const wrapper = mount(HomePage);
 
-  expect(output).eq('{"foo":"hello","bar":"world"}');
-  assert.deepEqual(JSON.parse(output), input, "matches original");
+  const view = wrapper.find(".count");
+
+  expect(view.text()).toBe("0");
 });
