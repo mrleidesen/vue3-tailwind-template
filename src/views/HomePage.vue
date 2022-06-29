@@ -1,7 +1,7 @@
 <template>
   <h1 class="text-red-500 text-[20px]">Hello Home!</h1>
-  <p>{{ count }}</p>
-  <button @click="increment">increment</button>
+  <p class="count">{{ count }}</p>
+  <button class="count-btn" @click="increment">increment</button>
 </template>
 
 <script lang="ts">
