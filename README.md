@@ -1,3 +1,6 @@
+## 废弃
+建议直接使用 [create-vue](https://github.com/vuejs/create-vue) 来创建项目
+
 # vue3-windi-template
 
 已经集成`Vite2`+`Vue3`+`VueRouter4`+`Windi CSS`，其余如需要根据 vite 文档来进行配置
